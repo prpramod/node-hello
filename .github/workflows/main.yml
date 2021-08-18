@@ -11,7 +11,3 @@ jobs:
           node-version: "14.x"
       - name: install deps
         run: npm install
-      - name: lint
-        run: yarn lint
-      - name: tests
-        run: yarn test
