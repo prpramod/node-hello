@@ -24,7 +24,7 @@ jobs:
         with:
           buildpack: "https://github.com/lstoll/heroku-buildpack-monorepo"
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "pramodsapp-18aug-01"
+          heroku_app_name: "pram-955-aug-18"
           heroku_email: "pramod.luffy@gmail.com"
     environment:
       name: Staging
