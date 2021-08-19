@@ -22,9 +22,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: AkhileshNS/heroku-deploy@v3.12.12
         with:
-          buildpack: "https://github.com/lstoll/heroku-buildpack-monorepo"
+          #buildpack: "https://github.com/lstoll/heroku-buildpack-monorepo"
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "pram-955-aug-18"
-          heroku_email: "pramod.luffy@gmail.com"
-    environment:
-      name: Staging
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
